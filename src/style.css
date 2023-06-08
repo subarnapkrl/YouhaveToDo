@@ -1,0 +1,255 @@
+html {
+    background-color: #212121;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    font-size: 70px;
+    text-align: center;
+    margin: 35px;
+  }
+  
+  #content {
+    display: flex;
+    gap: 100px;
+    margin-left: 30px;
+  }
+  
+  .data-container {
+    background-color: #292929;
+    border-radius: 5px;
+    width: 20px;
+    min-height: 700px;
+  }
+  
+  #lists-container {
+    min-width: 350px;
+  }
+  
+  #tasks-container {
+    min-width: 1300px;
+  }
+  
+  .container-item {
+    border-bottom: 1px solid #313131;
+    height: 8%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .container-item:hover {
+    background-color: #313131;
+  }
+  
+  .delete-list-icon {
+    margin-left: auto;
+    margin-right: 20px;
+    color: white;
+  }
+  
+  .list-name {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+  
+  .task-buttons {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  .delete-task-icon {
+    margin-left: 8px;
+  }
+  .expand-task-icon {
+    margin-left: 8px;
+  }
+  
+  .task-data {
+    margin-left: 15px;
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+  }
+  
+  a {
+    cursor: pointer;
+  }
+  
+  .lists-header {
+    display: flex;
+    height: 8%;
+    align-items: center;
+    border-bottom: 1px solid #313131;
+  }
+  
+  .new-list-icon {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  #new-task-icon {
+    margin-left: auto;
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  h2 {
+    margin-left: 15px;
+    color: gray;
+  }
+  
+  .selected {
+    background-color: #313131;
+    font-weight: bold;
+  }
+  
+  .new-task-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .new-list-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .popup-content {
+    color: #aaa;
+    background-image: linear-gradient(
+      225deg,
+      #1d1d1d 0%,
+      #352446 50%,
+      #262b32 100%
+    );
+    margin: 15% auto;
+    padding: 20px;
+    width: 20%;
+    border-radius: 10px;
+  }
+  
+  .close-task-popup {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-list-popup {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-task-popup:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .close-list-popup:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .add-new-task-title {
+    text-align: center;
+  }
+  
+  .task-info-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+  
+  .popup-text-field {
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 1px solid #aaa;
+    height: 30px;
+    color: #aaa;
+    font-size: 16px;
+  }
+  
+  .popup-date-field {
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 1px solid #aaa;
+    height: 30px;
+    color: #aaa;
+    font-size: 16px;
+  }
+  
+  .popup-priority-field {
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 1px solid #aaa;
+    height: 30px;
+    color: #aaa;
+    font-size: 16px;
+  }
+  
+  option {
+    color: black;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 0.5;
+  }
+  
+  .submit-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .submit {
+    background-color: transparent;
+    border-style: none;
+    border: 1px solid #aaa;
+    color: #aaa;
+    font-weight: bold;
+    border-radius: 25px;
+    height: 30px;
+    width: 90px;
+  }
+  
+  .submit:hover {
+    background-color: #aaa;
+    color: #352446;
+    cursor: pointer;
+  }
+  
+  .task-description {
+    display: none;
+  }
+  
+  .task-name {
+    min-width: 175px;
+  }
+  
+  .task-dueDate {
+    min-width: 100px;
+  }
+  
+  .checked {
+    color: green;
+    text-decoration: line;
+  }
