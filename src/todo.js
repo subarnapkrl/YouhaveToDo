@@ -104,6 +104,7 @@ function selectCurrentList(list)
 
 }
 
+
 function checkTask(task)
 {
     if(currentList.content[getTaskIndex(task)].checked==false){
