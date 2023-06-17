@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Have ToDo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="icons/css/all.css">
+    
+</head>
+<body>
+  <!-- THIS IS LIST OF PROJECTS POP-UP FOR THE TASKS -->
+    <div class="new-list-popup">
+        <div class="popup-content">
+          <span class="close-list-popup">&times;</span>
+          <h2 class="add-new-task-title">Add New List</h2>
+          <div class="task-info-input">
+            <label class="popup-header">Name: </label>
+            <input type="text" class="popup-text-field" id="popup-list-name-input" maxlength="20" required>
+            <div class="submit-field">
+              <button class="submit" id="submit-list" style="margin-top: 15px;">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- END OF LIST POP-UP MENU -->
+
+
+      <!-- THIS IS TASKS OF THE SELECTED LIST OF PROJECTS-->
+      <div class="new-task-popup">
+        <div class="popup-content">
+          <span class="close-task-popup">&times;</span>
+          <h2 class="add-new-task-title">Add New Task</h2>
+          <div class="task-info-input">
+            <label class="popup-header">Name: </label>
+            <input type="text" class="popup-text-field" id="popup-task-name-input" maxlength="20" required>
+          </div>
+          <div class="task-info-input">
+            <label class="popup-header">Description: </label>
+            <input type="text" class="popup-text-field" id="popup-task-description-input" maxlength="100" required>
+          </div>
+          <div class="task-info-input">
+            <label class="popup-header">Due to: </label>
+            <input type="date" class="popup-date-field" id="popup-task-duedate-input" required>
+          </div>
+          <div class="task-info-input">
+            <label class="popup-header">Priority: </label>
+            <select class="popup-priority-field" id="popup-task-priority-input">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+          <div class="submit-field">
+            <button class="submit" id="submit-task">Submit</button>
+          </div>
+        </div>
+      </div>
+      <!-- eEND OF TASKS POPUP -->
+
+      <h1>You Have ToDo</h1>
+      <div id="content">
+        <!-- LISTS AREA -->
+        <div id="lists-container" class="data-container">
+          <div class="lists-header">
+            <h2>Lists</h2>
+            <a class="new-list-icon">
+             <i class="fas fa-plus"></i>
+            </a>
+          </div>
+          <div class="list container-item selected">
+            <p class="list-name">Example Project</p>
+          </div>
+        </div>
+        <!-- END LISTS AREA -->
+
+
+        <div id="tasks-container" class="data-container">
+         <div class="lists-header">
+           <h2>Tasks</h2>
+           <a id="new-task-icon">
+            <i class="fas fa-plus"></i>
+           </a>
+         </div>
+         <div id="tasks"></div>
+       </div>
+         </div>
+        </div>
+      </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
